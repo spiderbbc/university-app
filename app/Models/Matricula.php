@@ -24,6 +24,6 @@ class Matricula extends Model
      */
     public function asignaturas()
     {
-        return $this->belongsToMany(Asignatura::class)->using(Matricula_Asignatura::class);
+        return $this->belongsToMany(Asignatura::class,'matricula_asignaturas')->using(Matricula_Asignatura::class);
     }
 }

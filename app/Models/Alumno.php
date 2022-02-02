@@ -16,6 +16,14 @@ class Alumno extends Model
      */
     public function matricula()
     {
-        return $this->belongsTo(Matricula::class);
+        return $this->hasOne(Matricula::class);
+    }
+
+    /**
+     * Get the calificaciones for the alumno.
+     */
+    public function calificaciones()
+    {
+        return $this->hasMany(Calificaciones::class);
     }
 }

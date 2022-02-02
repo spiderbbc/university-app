@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMatriculaAsignaturasTable extends Migration
+class CreateCalificacionesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateMatriculaAsignaturasTable extends Migration
      */
     public function up()
     {
-        Schema::create('matricula_asignaturas', function (Blueprint $table) {
+        Schema::create('calificaciones', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('matricula_id')->constrained();
+            $table->unsignedBigInteger('alumno_id')->constrained();
             $table->unsignedBigInteger('asignatura_id')->constrained();
+            $table->integer("nota");
+            $table->integer("numero_convocatoria");
             $table->timestamps();
             // foreigns key
-            $table->foreign('matricula_id')->references('id')->on('matriculas')->onDelete('cascade');
+            $table->foreign('alumno_id')->references('id')->on('alumnos')->onDelete('cascade');
             $table->foreign('asignatura_id')->references('id')->on('asignaturas')->onDelete('cascade');
         });
     }
@@ -31,6 +33,6 @@ class CreateMatriculaAsignaturasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('matricula__asignaturas');
+        Schema::dropIfExists('calificaciones');
     }
 }

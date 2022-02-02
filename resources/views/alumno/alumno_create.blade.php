@@ -24,7 +24,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="form-label mt-4">Año de nacimiento</label>
-                            <input class="form-control" name="año_nacimiento" type="number" min="1900" max="2099" step="1" value="" required/>
+                            <input class="form-control" name="año_nacimiento" type="number" min="1950" max="2021" step="1" value="" required/>
                         </div>
                     </div>
 

@@ -19,7 +19,7 @@
                 <tr>
                     <td>{{$alumno->nombres}}</td>
                     <td>
-                        <a class="btn btn-info" href="{{route("alumno.edit",[$alumno])}}">
+                        <a class="btn btn-info" href="{{route("calificaciones.edit",[$alumno])}}">
                             calificaciones
                         </a>
                     </td>

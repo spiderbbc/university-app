@@ -10,6 +10,6 @@ class Matricula_Asignatura extends Pivot
 {
     use HasFactory;
     public $incrementing = true;
-    protected $table = "matricula__asignaturas";
+    protected $table = "matricula_asignaturas";
     protected $fillable = ["matricula_id","asignatura_id"];
 }

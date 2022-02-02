@@ -24,3 +24,5 @@ Route::resource("titulacion", "App\Http\Controllers\TitulacionController")->para
 Route::resource("asignatura", "App\Http\Controllers\AsignaturaController")->parameters(["asignaturas"=>"asignatura"]);
 
 Route::resource("alumno", "App\Http\Controllers\AlumnoController")->parameters(["alumnos"=>"alumno"]);
+
+Route::resource("calificaciones", "App\Http\Controllers\CalificacionesController");
