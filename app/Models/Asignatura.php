@@ -27,5 +27,13 @@ class Asignatura extends Model
         return $this->belongsTo(Titulacion::class);
     }
 
+    /**
+     * The matriculas that belong to the asignatura.
+     */
+    public function matriculas()
+    {
+        return $this->belongsToMany(Matricula::class)->using(Matricula_Asignatura::class);
+    }
+
 
 }

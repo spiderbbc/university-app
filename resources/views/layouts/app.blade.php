@@ -8,6 +8,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
       <!-- Theme -->
       <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+      <!-- selec2 cdn -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
       <!-- Scripts -->
       <script src="{{ asset('js/app.js') }}" defer></script>
       <!-- Styles -->
@@ -35,7 +38,7 @@
                      <a class="nav-link" href="{{route("asignatura.index")}}">Asignaturas</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">About</a>
+                     <a class="nav-link" href="{{route("alumno.index")}}">Alumnos</a>
                   </li>
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
