@@ -32,7 +32,7 @@
                      <a class="nav-link" href="{{route("titulacion.index")}}">Titulaciones</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Pricing</a>
+                     <a class="nav-link" href="{{route("asignatura.index")}}">Asignaturas</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">About</a>

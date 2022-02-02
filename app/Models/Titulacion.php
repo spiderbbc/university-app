@@ -12,4 +12,12 @@ class Titulacion extends Model
     protected $table = "titulacions";
     protected $fillable = ["nombre",
     ];
+
+    /**
+     * Get the asignatura associated with the Titulacion.
+     */
+    public function asignatura()
+    {
+        return $this->hasOne(Asignatura::class);
+    }
 }
